@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D58EEAA41E28172F00899EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EEAA31E28172F00899EAF /* AppDelegate.swift */; };
-		D58EEAA61E28172F00899EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EEAA51E28172F00899EAF /* ViewController.swift */; };
+		D58EEAA61E28172F00899EAF /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EEAA51E28172F00899EAF /* FaceViewController.swift */; };
 		D58EEAA91E28172F00899EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58EEAA71E28172F00899EAF /* Main.storyboard */; };
 		D58EEAAB1E28172F00899EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58EEAAA1E28172F00899EAF /* Assets.xcassets */; };
 		D58EEAAE1E28172F00899EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58EEAAC1E28172F00899EAF /* LaunchScreen.storyboard */; };
+		D58EEABA1E2817AD00899EAF /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EEAB91E2817AD00899EAF /* FaceView.swift */; };
+		D58EEABC1E282FE300899EAF /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EEABB1E282FE300899EAF /* FacialExpression.swift */; };
+		D58EEABE1E28370B00899EAF /* EmotionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58EEABD1E28370B00899EAF /* EmotionsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D58EEAA01E28172F00899EAF /* MyFaceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFaceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58EEAA31E28172F00899EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D58EEAA51E28172F00899EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D58EEAA51E28172F00899EAF /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		D58EEAA81E28172F00899EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D58EEAAA1E28172F00899EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58EEAAD1E28172F00899EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D58EEAAF1E28172F00899EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D58EEAB91E2817AD00899EAF /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		D58EEABB1E282FE300899EAF /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
+		D58EEABD1E28370B00899EAF /* EmotionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		D58EEAA21E28172F00899EAF /* MyFaceView */ = {
 			isa = PBXGroup;
 			children = (
-				D58EEAA31E28172F00899EAF /* AppDelegate.swift */,
-				D58EEAA51E28172F00899EAF /* ViewController.swift */,
 				D58EEAA71E28172F00899EAF /* Main.storyboard */,
+				D58EEAB81E28175E00899EAF /* Modal */,
+				D58EEAB71E28175800899EAF /* View */,
+				D58EEAB61E28174C00899EAF /* Controller */,
+				D58EEAB51E28174400899EAF /* Supporting Files */,
+			);
+			path = MyFaceView;
+			sourceTree = "<group>";
+		};
+		D58EEAB51E28174400899EAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D58EEAA31E28172F00899EAF /* AppDelegate.swift */,
 				D58EEAAA1E28172F00899EAF /* Assets.xcassets */,
 				D58EEAAC1E28172F00899EAF /* LaunchScreen.storyboard */,
 				D58EEAAF1E28172F00899EAF /* Info.plist */,
 			);
-			path = MyFaceView;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D58EEAB61E28174C00899EAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D58EEAA51E28172F00899EAF /* FaceViewController.swift */,
+				D58EEABD1E28370B00899EAF /* EmotionsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D58EEAB71E28175800899EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D58EEAB91E2817AD00899EAF /* FaceView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D58EEAB81E28175E00899EAF /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				D58EEABB1E282FE300899EAF /* FacialExpression.swift */,
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58EEAA61E28172F00899EAF /* ViewController.swift in Sources */,
+				D58EEAA61E28172F00899EAF /* FaceViewController.swift in Sources */,
+				D58EEABC1E282FE300899EAF /* FacialExpression.swift in Sources */,
+				D58EEABE1E28370B00899EAF /* EmotionsVC.swift in Sources */,
 				D58EEAA41E28172F00899EAF /* AppDelegate.swift in Sources */,
+				D58EEABA1E2817AD00899EAF /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
